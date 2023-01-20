@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'franklin';
+  src: url('ITCFranklinGothicStd-Hvy.otf') format('truetype');
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'franklin';
+  margin: 0;
+}
+
+#synthe_container {
+  padding-left: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1200px;
+  background: #1e32c8;
+  color: #FFFFFF;
+  font-size: 32px;
+  line-height: 44px;
+  height: 38px;
+}
+
+.commands_container {
+  display: block;
+  margin-top: 100px;
+  float: right;
+}
+
+.round_button {
+  display: block;
+  height: 40px;
+  width: 120px;
+  line-height: 40px;
+  border-radius: 4px;
+  margin: 12px;
+  background-color: #1e32c8;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+}
