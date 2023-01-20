@@ -4,7 +4,8 @@ $.getJSON("https://spreadsheets.google.com/feeds/list/1FbsVV0Kmu9vcmuVpaipoFl84D
   for (var el in data.feed.entry) {
     synthesFromSheets.push(data.feed.entry[el].gsx$synthes.$t);
   }
-  return confinementThings;
+  console.log(synthesFromSheets);
+  return synthesFromSheets;
 });
 
 
