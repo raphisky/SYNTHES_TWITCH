@@ -17,12 +17,12 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 1200px;
+  width: 1636px;
   background: #1e32c8;
   color: #FFFFFF;
-  font-size: 32px;
-  line-height: 44px;
-  height: 38px;
+  font-size: 72px;
+  line-height: 80px;
+  height: 112px;
 }
 
 .commands_container {
