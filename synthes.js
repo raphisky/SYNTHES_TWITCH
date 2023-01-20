@@ -1,6 +1,6 @@
 const synthesFromSheets = [];
 
-$.getJSON("https://spreadsheets.google.com/feeds/list/1FbsVV0Kmu9vcmuVpaipoFl84DhzObiXIH1w40U_yBl0/od6/public/values?alt=json", function(data) {
+$.getJSON("https://spreadsheets.google.com/feeds/list/1FbsVV0Kmu9vcmuVpaipoFl84DhzObiXIH1w40U_yBl0/1/public/values?alt=json", function(data) {
   for (var el in data.feed.entry) {
     synthesFromSheets.push(data.feed.entry[el].gsx$synthes.$t);
   }
