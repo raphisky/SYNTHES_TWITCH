@@ -1,17 +1,4 @@
-const synthesFromSheets = [];
-
-$.getJSON("https://spreadsheets.google.com/feeds/list/1FbsVV0Kmu9vcmuVpaipoFl84DhzObiXIH1w40U_yBl0/1/public/values?alt=json", function(data) {
-  for (var el in data.feed.entry) {
-    synthesFromSheets.push(data.feed.entry[el].gsx$synthes.$t);
-  }
-  console.log(synthesFromSheets);
-  return synthesFromSheets;
-});
-
-
-
-
-const newsText = [
+const cineShow_2 = [
   "Les news",
   "Cocorico : le cinéma le plus fréquenté au monde est français",
   "The Last of Us, déjà la meilleure série de 2023 ?",
@@ -23,11 +10,21 @@ const newsText = [
 
 ];
 
+const rapCave_5 = [
+  "5 actus RAP",
+  "Streameurs et rappeurs",
+  "Le 'Type Beat'",
+  "À l'ancienne",
+  "Un morceau : une ambiance",
+  "Les sorties de vendredi"
+
+]
+
 var currentSyntheIndex = -1;
 
 $('#next_synthe').click (function() {
   currentSyntheIndex = currentSyntheIndex + 1;
-  var currentSynthe = newsText[currentSyntheIndex];
+  var currentSynthe = rapCave_5[currentSyntheIndex];
   $('#synthe_container').html(currentSynthe);
   shuffleLetters(document.querySelector('#synthe_container'));
   return currentSyntheIndex;
@@ -37,7 +34,7 @@ $('#prev_synthe').click (function() {
 
   if (currentSyntheIndex > 0) {
     currentSyntheIndex = currentSyntheIndex - 1;
-    var currentSynthe = newsText[currentSyntheIndex];
+    var currentSynthe = rapCave_5[currentSyntheIndex];
     $('#synthe_container').html(currentSynthe);
     shuffleLetters(document.querySelector('#synthe_container'));
     return currentSyntheIndex;
