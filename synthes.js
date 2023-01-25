@@ -16,7 +16,8 @@ const rapCave_5 = [
   "Le 'Type Beat'",
   "À l'ancienne",
   "Un morceau : une ambiance",
-  "Les sorties de vendredi"
+  "Les sorties de vendredi",
+  "A la semaine prochaine !"
 
 ]
 
