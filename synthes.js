@@ -26,7 +26,8 @@ const cineShow_3 = [
   "On débrief les Oscars",
   "Nos Oscars à nous",
   "Le vidéo club de Dolan",
-  "2023 y a koi"
+  "2023 y a koi",
+  "A la semaine prochaine !"
 ];
 
 var currentSyntheIndex = -1;
