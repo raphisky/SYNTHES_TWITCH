@@ -18,14 +18,22 @@ const rapCave_5 = [
   "Un morceau : une ambiance",
   "Les sorties de vendredi",
   "A la semaine prochaine !"
-
 ]
+
+const cineShow_3 = [
+  "Bonjour à toutes et à tous !",
+  "On debrief les Césars",
+  "On débrief les Oscars",
+  "Nos Oscars à nous",
+  "Le vidéo club de Dolan",
+  "2023 y a koi"
+];
 
 var currentSyntheIndex = -1;
 
 $('#next_synthe').click (function() {
   currentSyntheIndex = currentSyntheIndex + 1;
-  var currentSynthe = rapCave_5[currentSyntheIndex];
+  var currentSynthe = cineShow_3[currentSyntheIndex];
   $('#synthe_container').html(currentSynthe);
   shuffleLetters(document.querySelector('#synthe_container'));
   return currentSyntheIndex;
@@ -35,7 +43,7 @@ $('#prev_synthe').click (function() {
 
   if (currentSyntheIndex > 0) {
     currentSyntheIndex = currentSyntheIndex - 1;
-    var currentSynthe = rapCave_5[currentSyntheIndex];
+    var currentSynthe = cineShow_3[currentSyntheIndex];
     $('#synthe_container').html(currentSynthe);
     shuffleLetters(document.querySelector('#synthe_container'));
     return currentSyntheIndex;
