@@ -1,3 +1,11 @@
+const rapCave_6 = [
+  "Les actus RAP",
+  "Les sorties de vendredi dernier",
+  "Le jeu de Tim",
+  "Les sorties de vendredi prochain"
+];
+
+
 const cineShow_2 = [
   "Les news",
   "Cocorico : le cinéma le plus fréquenté au monde est français",
@@ -7,7 +15,6 @@ const cineShow_2 = [
   "Le Kamoulox de la semaine : Selena Gomez en tête d’affiche du prochain film de Jacques Audiard",
   "Hollywood au cinéma et dans les séries",
   "A la semaine prochaine !"
-
 ];
 
 const rapCave_5 = [
@@ -34,7 +41,7 @@ var currentSyntheIndex = -1;
 
 $('#next_synthe').click (function() {
   currentSyntheIndex = currentSyntheIndex + 1;
-  var currentSynthe = cineShow_3[currentSyntheIndex];
+  var currentSynthe = rapCave_6[currentSyntheIndex];
   $('#synthe_container').html(currentSynthe);
   shuffleLetters(document.querySelector('#synthe_container'));
   return currentSyntheIndex;
@@ -44,7 +51,7 @@ $('#prev_synthe').click (function() {
 
   if (currentSyntheIndex > 0) {
     currentSyntheIndex = currentSyntheIndex - 1;
-    var currentSynthe = cineShow_3[currentSyntheIndex];
+    var currentSynthe = rapCave_6[currentSyntheIndex];
     $('#synthe_container').html(currentSynthe);
     shuffleLetters(document.querySelector('#synthe_container'));
     return currentSyntheIndex;
