@@ -9,15 +9,6 @@ const cineShow_4 = [
   "Les meilleures et les pires adaptations"
 ];
 
-"Les news",
-"Astérix et Obélix : démarrage exceptionnel",
-"The Last of Us saison 2 !!",
-"James Gunn : l’avenir du DC Universe",
-"Une série Tomb Raider dans les tuyaux",
-"Les recos films d’Arthur",
-"Tier List des films Astérix et Obélix",
-"Les meilleures et les pires adaptations"
-
 const rapCave_6 = [
   "Les actus RAP",
   "Les sorties de vendredi dernier",
