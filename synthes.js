@@ -1,10 +1,29 @@
+const cineShow_4 = [
+  "Les news",
+  "Astérix et Obélix : démarrage exceptionnel",
+  "The Last of Us saison 2 !!",
+  "James Gunn : l’avenir du DC Universe",
+  "Une série Tomb Raider dans les tuyaux",
+  "Les recos films d’Arthur",
+  "Tier List des films Astérix et Obélix",
+  "Les meilleures et les pires adaptations"
+];
+
+"Les news",
+"Astérix et Obélix : démarrage exceptionnel",
+"The Last of Us saison 2 !!",
+"James Gunn : l’avenir du DC Universe",
+"Une série Tomb Raider dans les tuyaux",
+"Les recos films d’Arthur",
+"Tier List des films Astérix et Obélix",
+"Les meilleures et les pires adaptations"
+
 const rapCave_6 = [
   "Les actus RAP",
   "Les sorties de vendredi dernier",
   "Le jeu de Tim",
   "Les sorties de vendredi prochain"
 ];
-
 
 const cineShow_2 = [
   "Les news",
@@ -41,7 +60,7 @@ var currentSyntheIndex = -1;
 
 $('#next_synthe').click (function() {
   currentSyntheIndex = currentSyntheIndex + 1;
-  var currentSynthe = rapCave_6[currentSyntheIndex];
+  var currentSynthe = cineShow_4[currentSyntheIndex];
   $('#synthe_container').html(currentSynthe);
   shuffleLetters(document.querySelector('#synthe_container'));
   return currentSyntheIndex;
@@ -51,7 +70,7 @@ $('#prev_synthe').click (function() {
 
   if (currentSyntheIndex > 0) {
     currentSyntheIndex = currentSyntheIndex - 1;
-    var currentSynthe = rapCave_6[currentSyntheIndex];
+    var currentSynthe = cineShow_4[currentSyntheIndex];
     $('#synthe_container').html(currentSynthe);
     shuffleLetters(document.querySelector('#synthe_container'));
     return currentSyntheIndex;
