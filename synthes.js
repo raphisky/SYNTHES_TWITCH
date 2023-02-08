@@ -1,3 +1,14 @@
+const rapCave_7 = [
+  "Bonjour !",
+  "On goûte les pâtes de Soolking",
+  "Les actus de Juju",
+  "Les sorties de vendredi dernier",
+  "JEU : Il faut choisir !",
+  "Merci et à la semaine prochaine !"
+
+];
+
+
 const cineShow_4 = [
   "Les news",
   "Astérix et Obélix : démarrage exceptionnel",
@@ -51,7 +62,7 @@ var currentSyntheIndex = -1;
 
 $('#next_synthe').click (function() {
   currentSyntheIndex = currentSyntheIndex + 1;
-  var currentSynthe = cineShow_4[currentSyntheIndex];
+  var currentSynthe = cineShow_7[currentSyntheIndex];
   $('#synthe_container').html(currentSynthe);
   shuffleLetters(document.querySelector('#synthe_container'));
   return currentSyntheIndex;
@@ -61,7 +72,7 @@ $('#prev_synthe').click (function() {
 
   if (currentSyntheIndex > 0) {
     currentSyntheIndex = currentSyntheIndex - 1;
-    var currentSynthe = cineShow_4[currentSyntheIndex];
+    var currentSynthe = cineShow_7[currentSyntheIndex];
     $('#synthe_container').html(currentSynthe);
     shuffleLetters(document.querySelector('#synthe_container'));
     return currentSyntheIndex;
