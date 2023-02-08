@@ -5,7 +5,6 @@ const rapCave_7 = [
   "Les sorties de vendredi dernier",
   "JEU : Il faut choisir !",
   "Merci et à la semaine prochaine !"
-
 ];
 
 
@@ -62,7 +61,7 @@ var currentSyntheIndex = -1;
 
 $('#next_synthe').click (function() {
   currentSyntheIndex = currentSyntheIndex + 1;
-  var currentSynthe = cineShow_7[currentSyntheIndex];
+  var currentSynthe = rapCave_7[currentSyntheIndex];
   $('#synthe_container').html(currentSynthe);
   shuffleLetters(document.querySelector('#synthe_container'));
   return currentSyntheIndex;
@@ -72,7 +71,7 @@ $('#prev_synthe').click (function() {
 
   if (currentSyntheIndex > 0) {
     currentSyntheIndex = currentSyntheIndex - 1;
-    var currentSynthe = cineShow_7[currentSyntheIndex];
+    var currentSynthe = rapCave_7[currentSyntheIndex];
     $('#synthe_container').html(currentSynthe);
     shuffleLetters(document.querySelector('#synthe_container'));
     return currentSyntheIndex;
