@@ -2,7 +2,7 @@ const cineShow_5 = [
   "Des news de Gladiator 2",
 	"L’épisode 5 de The Last of Us arrive plus tôt que prévu",
 	"Ça bouge chez Disney",
-	"George Clooney : le Bureau des légendes aux US!"
+	"George Clooney : le Bureau des légendes aux US!",
   "Guillermo del Toro, Oscar Isaac, Andrew Garfield et Frankenstein réunis dans un film Netflix"
 ];
 
