@@ -1,3 +1,12 @@
+const cineShow_5 = [
+  "Des news de Gladiator 2",
+	"L’épisode 5 de The Last of Us arrive plus tôt que prévu",
+	"Ça bouge chez Disney",
+	"George Clooney : le Bureau des légendes aux US!"
+  "Guillermo del Toro, Oscar Isaac, Andrew Garfield et Frankenstein réunis dans un film Netflix"
+];
+
+
 const rapCave_7 = [
   "Bonjour !",
   "On goûte les pâtes de Soolking",
@@ -61,7 +70,7 @@ var currentSyntheIndex = -1;
 
 $('#next_synthe').click (function() {
   currentSyntheIndex = currentSyntheIndex + 1;
-  var currentSynthe = rapCave_7[currentSyntheIndex];
+  var currentSynthe = cineShow_5[currentSyntheIndex];
   $('#synthe_container').html(currentSynthe);
   shuffleLetters(document.querySelector('#synthe_container'));
   return currentSyntheIndex;
@@ -71,7 +80,7 @@ $('#prev_synthe').click (function() {
 
   if (currentSyntheIndex > 0) {
     currentSyntheIndex = currentSyntheIndex - 1;
-    var currentSynthe = rapCave_7[currentSyntheIndex];
+    var currentSynthe = cineShow_5[currentSyntheIndex];
     $('#synthe_container').html(currentSynthe);
     shuffleLetters(document.querySelector('#synthe_container'));
     return currentSyntheIndex;
