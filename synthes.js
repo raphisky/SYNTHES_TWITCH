@@ -3,7 +3,7 @@ const cineShow_5 = [
 	"L’épisode 5 de The Last of Us arrive plus tôt que prévu",
 	"Ça bouge chez Disney",
 	"George Clooney : le Bureau des légendes aux US!",
-  "Guillermo del Toro, Oscar Isaac, Andrew Garfield et Frankenstein réunis dans un film Netflix",
+  "Pierre Niney sera le Comte de Monte-Cristo",
   "Arthur décrypte le vidéo club de M. Night Shyamalan",
   "Tierlist des films de James Cameron",
   "Les comédies françaises",
