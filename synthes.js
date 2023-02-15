@@ -20,6 +20,12 @@ const rapCave_7 = [
   "Merci et à la semaine prochaine !"
 ];
 
+const rapCave_8 = [
+  "ACTUS & SORTIES DE LA SEMAINE",
+  "ON TENTE UN TOP 10 RAP FR",
+  "ET À LA SEMAINE PROCHAINE !",
+];
+
 
 const cineShow_4 = [
   "Les news",
@@ -74,7 +80,7 @@ var currentSyntheIndex = -1;
 
 $('#next_synthe').click (function() {
   currentSyntheIndex = currentSyntheIndex + 1;
-  var currentSynthe = cineShow_5[currentSyntheIndex];
+  var currentSynthe = rapCave_8[currentSyntheIndex];
   $('#synthe_container').html(currentSynthe);
   shuffleLetters(document.querySelector('#synthe_container'));
   return currentSyntheIndex;
@@ -84,7 +90,7 @@ $('#prev_synthe').click (function() {
 
   if (currentSyntheIndex > 0) {
     currentSyntheIndex = currentSyntheIndex - 1;
-    var currentSynthe = cineShow_5[currentSyntheIndex];
+    var currentSynthe = rapCave_8[currentSyntheIndex];
     $('#synthe_container').html(currentSynthe);
     shuffleLetters(document.querySelector('#synthe_container'));
     return currentSyntheIndex;
