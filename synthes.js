@@ -10,6 +10,11 @@ const cineShow_5 = [
   "Les recos de la semaine"
 ];
 
+const cineShow_6 = [
+  "Les news de la semaine",
+  "Tierlist Marvel !",
+  "L'avenir de GoT dans les séries"
+];
 
 const rapCave_7 = [
   "Bonjour !",
@@ -80,7 +85,7 @@ var currentSyntheIndex = -1;
 
 $('#next_synthe').click (function() {
   currentSyntheIndex = currentSyntheIndex + 1;
-  var currentSynthe = rapCave_8[currentSyntheIndex];
+  var currentSynthe = cineShow_6[currentSyntheIndex];
   $('#synthe_container').html(currentSynthe);
   shuffleLetters(document.querySelector('#synthe_container'));
   return currentSyntheIndex;
@@ -90,7 +95,7 @@ $('#prev_synthe').click (function() {
 
   if (currentSyntheIndex > 0) {
     currentSyntheIndex = currentSyntheIndex - 1;
-    var currentSynthe = rapCave_8[currentSyntheIndex];
+    var currentSynthe = cineShow_6[currentSyntheIndex];
     $('#synthe_container').html(currentSynthe);
     shuffleLetters(document.querySelector('#synthe_container'));
     return currentSyntheIndex;
