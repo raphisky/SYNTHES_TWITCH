@@ -16,6 +16,16 @@ const cineShow_6 = [
   "L'avenir de GoT dans les séries"
 ];
 
+const cineShow_8 = [
+  "Ruben Östlund président du Jury de Cannes",
+  "Rumeur : Hogwarts Legacy adaptée en série HBO",
+  "Peter Pan : le trailer",
+  "The Idol : la nouvelle série de Sam Levinson fait polémique",
+  "Une pièce de théâtre Stranger Things",
+  "Tierlist des Star Wars"
+
+]
+
 const rapCave_7 = [
   "Bonjour !",
   "On goûte les pâtes de Soolking",
@@ -85,7 +95,7 @@ var currentSyntheIndex = -1;
 
 $('#next_synthe').click (function() {
   currentSyntheIndex = currentSyntheIndex + 1;
-  var currentSynthe = cineShow_6[currentSyntheIndex];
+  var currentSynthe = cineShow_8[currentSyntheIndex];
   $('#synthe_container').html(currentSynthe);
   shuffleLetters(document.querySelector('#synthe_container'));
   return currentSyntheIndex;
@@ -95,7 +105,7 @@ $('#prev_synthe').click (function() {
 
   if (currentSyntheIndex > 0) {
     currentSyntheIndex = currentSyntheIndex - 1;
-    var currentSynthe = cineShow_6[currentSyntheIndex];
+    var currentSynthe = cineShow_9[currentSyntheIndex];
     $('#synthe_container').html(currentSynthe);
     shuffleLetters(document.querySelector('#synthe_container'));
     return currentSyntheIndex;
