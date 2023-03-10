@@ -16,6 +16,16 @@ const cineShow_6 = [
   "L'avenir de GoT dans les séries"
 ];
 
+const cineShow_9 = [
+  "Creed III : bagarre dans les salles françaises",
+  "Le retour de Zorro en série",
+  "Une romcom à 130 millions de dollars pour Netflix",
+  "Le trailer de Citadelle, l’ambitieux projet d’Amazon",
+  "Nos pronos des Oscars",
+  "Tierlist : sagas du cinéma d’horreur",
+  "Les recos de la semaine"
+]
+
 const cineShow_8 = [
   "Ruben Östlund président du Jury de Cannes",
   "Rumeur : Hogwarts Legacy adaptée en série HBO",
@@ -23,7 +33,6 @@ const cineShow_8 = [
   "The Idol : la nouvelle série de Sam Levinson fait polémique",
   "Une pièce de théâtre Stranger Things",
   "Tierlist des Star Wars"
-
 ]
 
 const rapCave_7 = [
@@ -95,7 +104,7 @@ var currentSyntheIndex = -1;
 
 $('#next_synthe').click (function() {
   currentSyntheIndex = currentSyntheIndex + 1;
-  var currentSynthe = cineShow_8[currentSyntheIndex];
+  var currentSynthe = cineShow_9[currentSyntheIndex];
   $('#synthe_container').html(currentSynthe);
   shuffleLetters(document.querySelector('#synthe_container'));
   return currentSyntheIndex;
